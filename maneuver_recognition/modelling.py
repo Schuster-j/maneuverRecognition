@@ -6,17 +6,22 @@ from torch.utils.data import DataLoader
 
 
 class ManeuverModel(nn.Module):
-    """ Class with prototypical LSTM based model architecture for maneuver recognition."""
+    """ Class with LSTM based model architecture for maneuver recognition."""
 
-    def __init__(self, n_features: int, n_classes: int, n_hidden: int = 24, n_layers: int = 4,
-                 lstm_dropout: float = 0.7):
+    def __init__(self, n_features: int, n_classes: int, n_hidden: int = 24,
+                 n_layers: int = 4, lstm_dropout: float = 0.7,
+                 n_features_linear1: int = 64, n_features_linear2: int = 32,
+                 linear_dropout: float = 0.3):
         """ Initialization of model architecture.
 
         :param n_features: The number of expected features in the input x.
         :param n_classes: Number of classes for classification layer.
-        :param n_hidden: The number of features in the hidden state.
+        :param n_hidden: Number of features in the hidden state.
         :param n_layers: Number of stacked LSTM layers.
-        :param lstm_dropout: Rate of applied dropout in LSTM layers.
+        :param lstm_dropout: Value of applied dropout in LSTM layers.
+        :param n_features_linear1: Number of features in first linear layer.
+        :param n_features_linear2: Number of features in second linear layer.
+        :param linear_dropout: Value of applied dropout between first and second linear layer.
         """
 
         super().__init__()
@@ -25,15 +30,14 @@ class ManeuverModel(nn.Module):
             input_size=n_features,
             hidden_size=n_hidden,
             num_layers=n_layers,
-            batch_first=True,  # Format
+            batch_first=True,
             dropout=lstm_dropout
         )
 
-        self.full_layer1 = nn.Linear(n_hidden, 64)
-        self.dropout = nn.Dropout(0.3)
-        self.full_layer2 = nn.Linear(64, 32)
-
-        self.classifier = nn.Linear(32, n_classes)
+        self.full_layer1 = nn.Linear(n_hidden, n_features_linear1)
+        self.dropout = nn.Dropout(linear_dropout)
+        self.full_layer2 = nn.Linear(n_features_linear1, n_features_linear2)
+        self.classifier = nn.Linear(n_features_linear2, n_classes)
 
     def forward(self, x):
         """ Forward propagation. """
@@ -47,14 +51,23 @@ class ManeuverModel(nn.Module):
         out = self.classifier(out)
         return out
 
+    def predict(self, X):
+        """ Function to use model for prediction of given cases.
+
+        :param X: X data to use for prediction.
+        :return: List of predictions for given input data.
+        """
+
+        return [pred.argmax() for pred in self(X)]
+
 
 def train(dataloader, model, loss_fn, optimizer, device):
-    """ Internal training function for given model.
-    For training the model with data use train_maneuver_model.
+    """ Function to apply training process on model with given data of dataloader object.
+    In order to fit the model with direct data use train_maneuver_model.
 
     :param dataloader: Dataloader object for training data.
     :param model: Model object.
-    :param loss_fn: L.oss function.
+    :param loss_fn: Loss function.
     :param optimizer: Optimizer object for optimization algorithm.
     :param device: Device to use.
     """
@@ -77,7 +90,8 @@ def train(dataloader, model, loss_fn, optimizer, device):
 
 
 def test(dataloader, model, loss_fn, device):
-    """ Internal test function for given model.
+    """ Function to evaluate given model with data of dataloader. In order to use the model for predictions use
+    the predict function of the model object instead.
 
     :param dataloader: Dataloader object for test data.
     :param model: Model object.
@@ -103,10 +117,10 @@ def test(dataloader, model, loss_fn, device):
     return [correct, test_loss]
 
 
-def train_maneuver_model(model, X_train, y_train, X_test, y_test, epochs, batch_size,
+def fit_model(model, X_train, y_train, X_test, y_test, epochs, batch_size,
                          loss_function, optimizer, device):
-    """ Function to apply train model with given X and y training data. Uses given X and y test data
-    for training validation.
+    """ Function to fit a model. Applies model training with given X and y training data and uses given X and y test
+    data for training validation. Returns list of validation loss and validation accuracy per epoch.
 
     :param model: Model object
     :param X_train: X data of training partition.
@@ -128,7 +142,7 @@ def train_maneuver_model(model, X_train, y_train, X_test, y_test, epochs, batch_
     accuracy_list = np.zeros((epochs,))
 
     for epoch in range(epochs):
-        print(f"Epoch {epoch + 1}\n-------------------------------")
+        print(f"Epoch {epoch + 1} / {epochs}\n-------------------------------")
         train(train_dataloader, model, loss_function, optimizer, device)
         accuracy, test_loss = test(test_dataloader, model, loss_function, device)
         accuracy_list[epoch] = accuracy
@@ -136,14 +150,3 @@ def train_maneuver_model(model, X_train, y_train, X_test, y_test, epochs, batch_
     print("Done!")
 
     return loss_list, accuracy_list
-
-
-def predict(X_test, model):
-    """ Function to use model for prediction of given cases.
-
-    :param X_test: X data to use for prediction.
-    :param model: Model object to perform prediction.
-    :return: List of predictions for given input data.
-    """
-
-    return [pred.argmax() for pred in model(X_test)]
