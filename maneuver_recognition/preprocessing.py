@@ -18,13 +18,13 @@ def create_dataset(X: Any, y: Any, time_steps: int = 1, step_size: int = 1) -> T
     :param step_size: Steps between windows.
     :return: Tuple of numpy array for x-variable data and numpy array for y-variable data."""
 
-    Xs, ys = [], []
+    X_windows, y_values = [], []
     for i in range(0, len(X) - time_steps, step_size):
         values = X.iloc[i:(i + time_steps)].values
         labels = y.iloc[i: i + time_steps]
-        Xs.append(values)
-        ys.append(labels.mode()[0])
-    return np.array(Xs), np.array(ys).reshape(-1, 1)
+        X_windows.append(values)
+        y_values.append(labels.mode()[0])
+    return np.array(X_windows), np.array(y_values).reshape(-1, 1)
 
 
 def timeseries_train_test_split(data, x_variables, y_variable, splits: int, test_size: float, time_steps: int,
@@ -144,15 +144,16 @@ class LabelEncoding:
         """ Initialize LabelEncoding object based on sklearn LabelEncoder fitted on y training data.
         Attribute self.label_encoder can be used with function inverse_transform to transform y data back to encoded labels.
 
-        :param y_train:
-        :param y_test:
+        :param y_train: Target variable data of training partition.
+        :param y_test: Target variable data of testing partition.
         """
         from sklearn.preprocessing import LabelEncoder
 
         self.y_train = y_train
         self.y_test = y_test
         self.label_encoder = LabelEncoder()
-        self.encoded_labels = self.label_encoder.fit_transform(self.y_train)
+        self.label_encoder.fit_transform(self.y_train)
+        self.encoded_labels = self.label_encoder.classes_
 
     def transform(self):
         """ Function to transform y data by applying label encoding.
