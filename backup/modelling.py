@@ -16,7 +16,7 @@ class ManeuverModel(nn.Module):
 
         :param n_features: The number of expected features in the input x.
         :param n_classes: Number of classes for classification layer.
-        :param n_hidden: Number of features in the hidden state of the LSTM.
+        :param n_hidden: Number of features in the hidden state.
         :param n_layers: Number of stacked LSTM layers.
         :param lstm_dropout: Value of applied dropout in LSTM layers.
         :param n_features_linear1: Number of features in first linear layer.
@@ -62,8 +62,8 @@ class ManeuverModel(nn.Module):
 
 
 def train(dataloader, model, loss_fn, optimizer, device):
-    """ Function to apply training process on model with given data of dataloader object.
-    In order to fit the model with direct data use fit_model.
+    """ Internal training function for given model.
+    For training the model with data use train_maneuver_model.
 
     :param dataloader: Dataloader object for training data.
     :param model: Model object.
@@ -90,8 +90,7 @@ def train(dataloader, model, loss_fn, optimizer, device):
 
 
 def test(dataloader, model, loss_fn, device):
-    """ Function to evaluate given model with data of dataloader. In order to use the model for predictions use
-    the predict function of the model object instead.
+    """ Internal test function for given model.
 
     :param dataloader: Dataloader object for test data.
     :param model: Model object.
@@ -117,10 +116,10 @@ def test(dataloader, model, loss_fn, device):
     return [correct, test_loss]
 
 
-def fit_model(model, X_train, y_train, X_test, y_test, epochs, batch_size,
+def train_maneuver_model(model, X_train, y_train, X_test, y_test, epochs, batch_size,
                          loss_function, optimizer, device):
-    """ Function to fit a model. Applies model training with given X and y training data and uses given X and y test
-    data for training validation. Returns list of validation loss and validation accuracy per epoch.
+    """ Function to apply model training with given X and y training data. Uses given X and y test data
+    for training validation.
 
     :param model: Model object
     :param X_train: X data of training partition.

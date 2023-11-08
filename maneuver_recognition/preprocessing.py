@@ -165,7 +165,7 @@ class LabelEncoding:
         return self.y_train, self.y_test
 
 
-def transform_variables(X_train: Any, y_train: Any, X_test: Any, y_test: Any):
+def transform_to_variables(X_train: Any, y_train: Any, X_test: Any, y_test: Any):
     """ Function to transform arrays of training and testing data to torch Variables.
 
     :param X_train: Numpy array of training predictor data.
