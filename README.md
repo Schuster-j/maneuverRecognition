@@ -34,11 +34,13 @@ ManeuverRecognition is a python package providing functions for the preprocessin
       * [3.1.3. remove_maneuvers()](#heading--3-1-3)
       * [3.1.4. LabelEncoding](#heading--3-1-4)
       * [3.1.5. transform_to_variables()](#heading--3-1-5)
+    
    * [3.2. Modelling module](#heading--3-2)
       * [3.2.1. ManeuverModel](#heading--3-2-1)
       * [3.2.2. train()](#heading--3-2-2)
       * [3.2.3. test()](#heading--3-2-3)
       * [3.2.4. fit_model()](#heading--3-2-4)
+    
    * [3.3. Evaluation module](#heading--3-3)
       * [3.3.1. relative_values()](#heading--3-3-1)
       * [3.3.2. plot_training_process()](#heading--3-3-2)
