@@ -16,7 +16,7 @@ class ManeuverModel(nn.Module):
 
         :param n_features: The number of expected features in the input x.
         :param n_classes: Number of classes for classification layer.
-        :param n_hidden: Number of features in the hidden state.
+        :param n_hidden: Number of features in the hidden state of the LSTM.
         :param n_layers: Number of stacked LSTM layers.
         :param lstm_dropout: Value of applied dropout in LSTM layers.
         :param n_features_linear1: Number of features in first linear layer.
@@ -63,7 +63,7 @@ class ManeuverModel(nn.Module):
 
 def train(dataloader, model, loss_fn, optimizer, device):
     """ Function to apply training process on model with given data of dataloader object.
-    In order to fit the model with direct data use train_maneuver_model.
+    In order to fit the model with direct data use fit_model.
 
     :param dataloader: Dataloader object for training data.
     :param model: Model object.
