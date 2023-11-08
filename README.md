@@ -362,32 +362,7 @@ fig.update_yaxes(title_text='Amount')
 fig.show()
 ```
 
-
-<div>                            <div id="b56bad5a-e188-42b1-93d2-70fc20a03f89" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("b56bad5a-e188-42b1-93d2-70fc20a03f89")) {                    Plotly.newPlot(                        "b56bad5a-e188-42b1-93d2-70fc20a03f89",                        [{"name":"Training data","text":[188.0,216.0,154.0,168.0,101.0,282.0,135.0,96.0],"textposition":"auto","x":["acceleration_from_standing","continuous_driving","curve_left","curve_right","stationary","targeted_braking","turn_left","turn_right"],"y":[188,216,154,168,101,282,135,96],"type":"bar"},{"name":"Test data","text":[27.0,53.0,28.0,28.0,34.0,65.0,20.0,25.0],"textposition":"auto","x":["acceleration_from_standing","continuous_driving","curve_left","curve_right","stationary","targeted_braking","turn_left","turn_right"],"y":[27,53,28,28,34,65,20,25],"type":"bar"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmapgl":[{"type":"heatmapgl","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"barmode":"stack","title":{"text":"Amount of windows per maneuver type in the train and test data"},"xaxis":{"title":{"text":"maneuver"}},"yaxis":{"title":{"text":"Amount"}}},                        {"responsive": true}                    ).then(function(){
-
-var gd = document.getElementById('b56bad5a-e188-42b1-93d2-70fc20a03f89');
-var x = new MutationObserver(function (mutations, observer) {{
-        var display = window.getComputedStyle(gd).display;
-        if (!display || display === 'none') {{
-            console.log([gd, 'removed!']);
-            Plotly.purge(gd);
-            observer.disconnect();
-        }}
-}});
-
-// Listen for the removal of the full notebook cells
-var notebookContainer = gd.closest('#notebook-container');
-if (notebookContainer) {{
-    x.observe(notebookContainer, {childList: true});
-}}
-
-// Listen for the clearing of the current output cell
-var outputEl = gd.closest('.output');
-if (outputEl) {{
-    x.observe(outputEl, {childList: true});
-}}
-
-                        })                };                });            </script>        </div>
+![image info](./images/Class_distribution2.png)
 
 
 ### 2.3.3 Label encoding and variable transformation <a name="heading--2-3-3"/>
@@ -471,309 +446,7 @@ loss_list, accuracy_list = modelling.fit_model(model, X_train, y_train, X_test, 
                                          device=device)
 ```
 
-    Epoch 1 / 80
-    -------------------------------
-    Test Error: Accuracy: 18.9%, Avg loss: 2.066377 
-    
-    Epoch 2 / 80
-    -------------------------------
-    Test Error: Accuracy: 18.9%, Avg loss: 2.046679 
-    
-    Epoch 3 / 80
-    -------------------------------
-    Test Error: Accuracy: 36.1%, Avg loss: 2.015119 
-    
-    Epoch 4 / 80
-    -------------------------------
-    Test Error: Accuracy: 30.4%, Avg loss: 1.950466 
-    
-    Epoch 5 / 80
-    -------------------------------
-    Test Error: Accuracy: 32.9%, Avg loss: 1.820074 
-    
-    Epoch 6 / 80
-    -------------------------------
-    Test Error: Accuracy: 45.0%, Avg loss: 1.637263 
-    
-    Epoch 7 / 80
-    -------------------------------
-    Test Error: Accuracy: 46.1%, Avg loss: 1.483204 
-    
-    Epoch 8 / 80
-    -------------------------------
-    Test Error: Accuracy: 48.9%, Avg loss: 1.375482 
-    
-    Epoch 9 / 80
-    -------------------------------
-    Test Error: Accuracy: 49.6%, Avg loss: 1.269373 
-    
-    Epoch 10 / 80
-    -------------------------------
-    Test Error: Accuracy: 52.5%, Avg loss: 1.189174 
-    
-    Epoch 11 / 80
-    -------------------------------
-    Test Error: Accuracy: 53.2%, Avg loss: 1.146565 
-    
-    Epoch 12 / 80
-    -------------------------------
-    Test Error: Accuracy: 54.3%, Avg loss: 1.110831 
-    
-    Epoch 13 / 80
-    -------------------------------
-    Test Error: Accuracy: 53.6%, Avg loss: 1.088348 
-    
-    Epoch 14 / 80
-    -------------------------------
-    Test Error: Accuracy: 56.4%, Avg loss: 1.043149 
-    
-    Epoch 15 / 80
-    -------------------------------
-    Test Error: Accuracy: 60.7%, Avg loss: 1.004520 
-    
-    Epoch 16 / 80
-    -------------------------------
-    Test Error: Accuracy: 66.8%, Avg loss: 0.988779 
-    
-    Epoch 17 / 80
-    -------------------------------
-    Test Error: Accuracy: 64.3%, Avg loss: 0.935895 
-    
-    Epoch 18 / 80
-    -------------------------------
-    Test Error: Accuracy: 66.8%, Avg loss: 0.920399 
-    
-    Epoch 19 / 80
-    -------------------------------
-    Test Error: Accuracy: 66.1%, Avg loss: 0.885833 
-    
-    Epoch 20 / 80
-    -------------------------------
-    Test Error: Accuracy: 67.1%, Avg loss: 0.869168 
-    
-    Epoch 21 / 80
-    -------------------------------
-    Test Error: Accuracy: 67.9%, Avg loss: 0.854492 
-    
-    Epoch 22 / 80
-    -------------------------------
-    Test Error: Accuracy: 68.2%, Avg loss: 0.853581 
-    
-    Epoch 23 / 80
-    -------------------------------
-    Test Error: Accuracy: 75.4%, Avg loss: 0.822195 
-    
-    Epoch 24 / 80
-    -------------------------------
-    Test Error: Accuracy: 71.1%, Avg loss: 0.797603 
-    
-    Epoch 25 / 80
-    -------------------------------
-    Test Error: Accuracy: 78.6%, Avg loss: 0.812069 
-    
-    Epoch 26 / 80
-    -------------------------------
-    Test Error: Accuracy: 77.1%, Avg loss: 0.781804 
-    
-    Epoch 27 / 80
-    -------------------------------
-    Test Error: Accuracy: 78.2%, Avg loss: 0.781531 
-    
-    Epoch 28 / 80
-    -------------------------------
-    Test Error: Accuracy: 78.2%, Avg loss: 0.730260 
-    
-    Epoch 29 / 80
-    -------------------------------
-    Test Error: Accuracy: 76.8%, Avg loss: 0.730383 
-    
-    Epoch 30 / 80
-    -------------------------------
-    Test Error: Accuracy: 78.6%, Avg loss: 0.762228 
-    
-    Epoch 31 / 80
-    -------------------------------
-    Test Error: Accuracy: 78.2%, Avg loss: 0.699326 
-    
-    Epoch 32 / 80
-    -------------------------------
-    Test Error: Accuracy: 79.3%, Avg loss: 0.690844 
-    
-    Epoch 33 / 80
-    -------------------------------
-    Test Error: Accuracy: 80.7%, Avg loss: 0.667862 
-    
-    Epoch 34 / 80
-    -------------------------------
-    Test Error: Accuracy: 79.3%, Avg loss: 0.668733 
-    
-    Epoch 35 / 80
-    -------------------------------
-    Test Error: Accuracy: 80.7%, Avg loss: 0.655001 
-    
-    Epoch 36 / 80
-    -------------------------------
-    Test Error: Accuracy: 81.1%, Avg loss: 0.649027 
-    
-    Epoch 37 / 80
-    -------------------------------
-    Test Error: Accuracy: 80.4%, Avg loss: 0.620295 
-    
-    Epoch 38 / 80
-    -------------------------------
-    Test Error: Accuracy: 80.0%, Avg loss: 0.651888 
-    
-    Epoch 39 / 80
-    -------------------------------
-    Test Error: Accuracy: 81.8%, Avg loss: 0.638272 
-    
-    Epoch 40 / 80
-    -------------------------------
-    Test Error: Accuracy: 82.9%, Avg loss: 0.624502 
-    
-    Epoch 41 / 80
-    -------------------------------
-    Test Error: Accuracy: 80.4%, Avg loss: 0.632040 
-    
-    Epoch 42 / 80
-    -------------------------------
-    Test Error: Accuracy: 82.1%, Avg loss: 0.642381 
-    
-    Epoch 43 / 80
-    -------------------------------
-    Test Error: Accuracy: 82.5%, Avg loss: 0.622718 
-    
-    Epoch 44 / 80
-    -------------------------------
-    Test Error: Accuracy: 81.8%, Avg loss: 0.615205 
-    
-    Epoch 45 / 80
-    -------------------------------
-    Test Error: Accuracy: 82.9%, Avg loss: 0.618215 
-    
-    Epoch 46 / 80
-    -------------------------------
-    Test Error: Accuracy: 82.9%, Avg loss: 0.633227 
-    
-    Epoch 47 / 80
-    -------------------------------
-    Test Error: Accuracy: 82.5%, Avg loss: 0.648868 
-    
-    Epoch 48 / 80
-    -------------------------------
-    Test Error: Accuracy: 81.8%, Avg loss: 0.625816 
-    
-    Epoch 49 / 80
-    -------------------------------
-    Test Error: Accuracy: 82.1%, Avg loss: 0.648540 
-    
-    Epoch 50 / 80
-    -------------------------------
-    Test Error: Accuracy: 82.9%, Avg loss: 0.631932 
-    
-    Epoch 51 / 80
-    -------------------------------
-    Test Error: Accuracy: 82.1%, Avg loss: 0.604776 
-    
-    Epoch 52 / 80
-    -------------------------------
-    Test Error: Accuracy: 83.6%, Avg loss: 0.635742 
-    
-    Epoch 53 / 80
-    -------------------------------
-    Test Error: Accuracy: 83.2%, Avg loss: 0.580780 
-    
-    Epoch 54 / 80
-    -------------------------------
-    Test Error: Accuracy: 82.9%, Avg loss: 0.606236 
-    
-    Epoch 55 / 80
-    -------------------------------
-    Test Error: Accuracy: 82.1%, Avg loss: 0.582590 
-    
-    Epoch 56 / 80
-    -------------------------------
-    Test Error: Accuracy: 83.2%, Avg loss: 0.631917 
-    
-    Epoch 57 / 80
-    -------------------------------
-    Test Error: Accuracy: 82.9%, Avg loss: 0.620733 
-    
-    Epoch 58 / 80
-    -------------------------------
-    Test Error: Accuracy: 83.2%, Avg loss: 0.614172 
-    
-    Epoch 59 / 80
-    -------------------------------
-    Test Error: Accuracy: 82.9%, Avg loss: 0.591770 
-    
-    Epoch 60 / 80
-    -------------------------------
-    Test Error: Accuracy: 83.9%, Avg loss: 0.635004 
-    
-    Epoch 61 / 80
-    -------------------------------
-    Test Error: Accuracy: 83.2%, Avg loss: 0.599207 
-    
-    Epoch 62 / 80
-    -------------------------------
-    Test Error: Accuracy: 83.2%, Avg loss: 0.615736 
-    
-    Epoch 63 / 80
-    -------------------------------
-    Test Error: Accuracy: 82.9%, Avg loss: 0.606103 
-    
-    Epoch 64 / 80
-    -------------------------------
-    Test Error: Accuracy: 83.2%, Avg loss: 0.596479 
-    
-    Epoch 65 / 80
-    -------------------------------
-    Test Error: Accuracy: 82.9%, Avg loss: 0.612608 
-    
-    Epoch 66 / 80
-    -------------------------------
-    Test Error: Accuracy: 83.2%, Avg loss: 0.592375 
-    
-    Epoch 67 / 80
-    -------------------------------
-    Test Error: Accuracy: 84.3%, Avg loss: 0.623628 
-    
-    Epoch 68 / 80
-    -------------------------------
-    Test Error: Accuracy: 83.6%, Avg loss: 0.559583 
-    
-    Epoch 69 / 80
-    -------------------------------
-    Test Error: Accuracy: 83.2%, Avg loss: 0.614667 
-    
-    Epoch 70 / 80
-    -------------------------------
-    Test Error: Accuracy: 83.2%, Avg loss: 0.599228 
-    
-    Epoch 71 / 80
-    -------------------------------
-    Test Error: Accuracy: 83.2%, Avg loss: 0.624515 
-    
-    Epoch 72 / 80
-    -------------------------------
-    Test Error: Accuracy: 83.2%, Avg loss: 0.616237 
-    
-    Epoch 73 / 80
-    -------------------------------
-    Test Error: Accuracy: 83.6%, Avg loss: 0.595971 
-    
-    Epoch 74 / 80
-    -------------------------------
-    Test Error: Accuracy: 83.6%, Avg loss: 0.610071 
-    
-    Epoch 75 / 80
-    -------------------------------
-    Test Error: Accuracy: 83.6%, Avg loss: 0.559633 
-    
-    Epoch 76 / 80
-    -------------------------------
-    Test Error: Accuracy: 83.9%, Avg loss: 0.628502 
+    ...
     
     Epoch 77 / 80
     -------------------------------
@@ -808,9 +481,8 @@ from maneuver_recognition import evaluation
 evaluation.plot_training_process(loss_list, accuracy_list)
 ```
 
+![image info](./images/Training_process.png)
 
-    
-![png](output_34_0.png)
     
 
 
@@ -836,33 +508,7 @@ fig = evaluation.confusion_heatmap(y_test, y_pred, classes)
 fig.show()
 ```
 
-
-<div>                            <div id="bc28cb75-055c-4c94-b0e9-65873f0cc776" class="plotly-graph-div" style="height:900px; width:900px;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("bc28cb75-055c-4c94-b0e9-65873f0cc776")) {                    Plotly.newPlot(                        "bc28cb75-055c-4c94-b0e9-65873f0cc776",                        [{"coloraxis":"coloraxis","name":"0","x":["acceleration_from_standing","continuous_driving","curve_left","curve_right","stationary","targeted_braking","turn_left","turn_right"],"y":["acceleration_from_standing","continuous_driving","curve_left","curve_right","stationary","targeted_braking","turn_left","turn_right"],"z":[[24,0,0,0,1,0,0,2],[0,47,0,2,0,4,0,0],[0,2,25,1,0,0,0,0],[0,1,0,25,0,0,0,2],[0,0,0,0,32,2,0,0],[1,6,0,1,1,53,1,2],[5,0,2,0,0,0,13,0],[3,0,1,1,1,2,1,16]],"type":"heatmap","xaxis":"x","yaxis":"y","hovertemplate":"Predicted: %{x}<br>Actual: %{y}<br>color: %{z}<extra></extra>","text":[[24,0,0,0,1,0,0,2],[0,47,0,2,0,4,0,0],[0,2,25,1,0,0,0,0],[0,1,0,25,0,0,0,2],[0,0,0,0,32,2,0,0],[1,6,0,1,1,53,1,2],[5,0,2,0,0,0,13,0],[3,0,1,1,1,2,1,16]],"texttemplate":"%{text:.2f}"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmapgl":[{"type":"heatmapgl","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"scaleanchor":"y","constrain":"domain","title":{"text":"Predicted"}},"yaxis":{"anchor":"x","domain":[0.0,1.0],"autorange":"reversed","constrain":"domain","title":{"text":"Actual"}},"coloraxis":{"colorscale":[[0.0,"rgb(247,251,255)"],[0.125,"rgb(222,235,247)"],[0.25,"rgb(198,219,239)"],[0.375,"rgb(158,202,225)"],[0.5,"rgb(107,174,214)"],[0.625,"rgb(66,146,198)"],[0.75,"rgb(33,113,181)"],[0.875,"rgb(8,81,156)"],[1.0,"rgb(8,48,107)"]]},"margin":{"t":60},"title":{"text":"Confusion Heatmap"},"height":900,"width":900},                        {"responsive": true}                    ).then(function(){
-
-var gd = document.getElementById('bc28cb75-055c-4c94-b0e9-65873f0cc776');
-var x = new MutationObserver(function (mutations, observer) {{
-        var display = window.getComputedStyle(gd).display;
-        if (!display || display === 'none') {{
-            console.log([gd, 'removed!']);
-            Plotly.purge(gd);
-            observer.disconnect();
-        }}
-}});
-
-// Listen for the removal of the full notebook cells
-var notebookContainer = gd.closest('#notebook-container');
-if (notebookContainer) {{
-    x.observe(notebookContainer, {childList: true});
-}}
-
-// Listen for the clearing of the current output cell
-var outputEl = gd.closest('.output');
-if (outputEl) {{
-    x.observe(outputEl, {childList: true});
-}}
-
-                        })                };                });            </script>        </div>
-
+![image info](./images/Confusion_heatmap.png)
 
 ### 2.5.3 Recall heatmap <a name="heading--2-5-3"/>
 
@@ -874,33 +520,7 @@ fig = evaluation.recall_heatmap(y_test, y_pred, classes)
 fig.show()
 ```
 
-
-<div>                            <div id="a63a14a4-3ca7-4e67-808c-17e5ed0a761c" class="plotly-graph-div" style="height:900px; width:900px;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("a63a14a4-3ca7-4e67-808c-17e5ed0a761c")) {                    Plotly.newPlot(                        "a63a14a4-3ca7-4e67-808c-17e5ed0a761c",                        [{"coloraxis":"coloraxis","name":"0","x":["acceleration_from_standing","continuous_driving","curve_left","curve_right","stationary","targeted_braking","turn_left","turn_right"],"y":["acceleration_from_standing","continuous_driving","curve_left","curve_right","stationary","targeted_braking","turn_left","turn_right"],"z":[[0.8888888888888888,0.0,0.0,0.0,0.037037037037037035,0.0,0.0,0.07407407407407407],[0.0,0.8867924528301887,0.0,0.03773584905660377,0.0,0.07547169811320754,0.0,0.0],[0.0,0.07142857142857142,0.8928571428571429,0.03571428571428571,0.0,0.0,0.0,0.0],[0.0,0.03571428571428571,0.0,0.8928571428571429,0.0,0.0,0.0,0.07142857142857142],[0.0,0.0,0.0,0.0,0.9411764705882353,0.058823529411764705,0.0,0.0],[0.015384615384615385,0.09230769230769231,0.0,0.015384615384615385,0.015384615384615385,0.8153846153846154,0.015384615384615385,0.03076923076923077],[0.25,0.0,0.1,0.0,0.0,0.0,0.65,0.0],[0.12,0.0,0.04,0.04,0.04,0.08,0.04,0.64]],"type":"heatmap","xaxis":"x","yaxis":"y","hovertemplate":"Predicted: %{x}<br>Actual: %{y}<br>color: %{z}<extra></extra>","text":[[0.8888888888888888,0.0,0.0,0.0,0.037037037037037035,0.0,0.0,0.07407407407407407],[0.0,0.8867924528301887,0.0,0.03773584905660377,0.0,0.07547169811320754,0.0,0.0],[0.0,0.07142857142857142,0.8928571428571429,0.03571428571428571,0.0,0.0,0.0,0.0],[0.0,0.03571428571428571,0.0,0.8928571428571429,0.0,0.0,0.0,0.07142857142857142],[0.0,0.0,0.0,0.0,0.9411764705882353,0.058823529411764705,0.0,0.0],[0.015384615384615385,0.09230769230769231,0.0,0.015384615384615385,0.015384615384615385,0.8153846153846154,0.015384615384615385,0.03076923076923077],[0.25,0.0,0.1,0.0,0.0,0.0,0.65,0.0],[0.12,0.0,0.04,0.04,0.04,0.08,0.04,0.64]],"texttemplate":"%{text:.2f}"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmapgl":[{"type":"heatmapgl","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"scaleanchor":"y","constrain":"domain","title":{"text":"Predicted"}},"yaxis":{"anchor":"x","domain":[0.0,1.0],"autorange":"reversed","constrain":"domain","title":{"text":"Actual"}},"coloraxis":{"colorscale":[[0.0,"rgb(247,251,255)"],[0.125,"rgb(222,235,247)"],[0.25,"rgb(198,219,239)"],[0.375,"rgb(158,202,225)"],[0.5,"rgb(107,174,214)"],[0.625,"rgb(66,146,198)"],[0.75,"rgb(33,113,181)"],[0.875,"rgb(8,81,156)"],[1.0,"rgb(8,48,107)"]]},"margin":{"t":60},"title":{"text":"Recall heatmap (row wise relative values)"},"height":900,"width":900},                        {"responsive": true}                    ).then(function(){
-
-var gd = document.getElementById('a63a14a4-3ca7-4e67-808c-17e5ed0a761c');
-var x = new MutationObserver(function (mutations, observer) {{
-        var display = window.getComputedStyle(gd).display;
-        if (!display || display === 'none') {{
-            console.log([gd, 'removed!']);
-            Plotly.purge(gd);
-            observer.disconnect();
-        }}
-}});
-
-// Listen for the removal of the full notebook cells
-var notebookContainer = gd.closest('#notebook-container');
-if (notebookContainer) {{
-    x.observe(notebookContainer, {childList: true});
-}}
-
-// Listen for the clearing of the current output cell
-var outputEl = gd.closest('.output');
-if (outputEl) {{
-    x.observe(outputEl, {childList: true});
-}}
-
-                        })                };                });            </script>        </div>
-
+![image info](./images/Recall_heatmap.png)
 
 The lowest recall value is 0.64 for the class *turn right* while the highest value is 0.94 for *stationary*. It can be seen that given the actual maneuver is a left or right turn a proportion of twenty five and twelve percent of cases were incorrectly predicted as *acceleration from standing*. For actual left turns also ten percent of the predictions were incorrectly classified as left curves.
 
@@ -914,34 +534,7 @@ The precision_heatmap function can be used to inspect the proportion of correctl
 fig = evaluation.precision_heatmap(y_test, y_pred, classes)
 fig.show()
 ```
-
-
-<div>                            <div id="d1e9e48d-9fa6-4d21-84f2-2daec8f0248f" class="plotly-graph-div" style="height:900px; width:900px;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("d1e9e48d-9fa6-4d21-84f2-2daec8f0248f")) {                    Plotly.newPlot(                        "d1e9e48d-9fa6-4d21-84f2-2daec8f0248f",                        [{"coloraxis":"coloraxis","name":"0","x":["acceleration_from_standing","continuous_driving","curve_left","curve_right","stationary","targeted_braking","turn_left","turn_right"],"y":["acceleration_from_standing","continuous_driving","curve_left","curve_right","stationary","targeted_braking","turn_left","turn_right"],"z":[[0.7272727272727273,0.0,0.0,0.0,0.02857142857142857,0.0,0.0,0.09090909090909091],[0.0,0.8392857142857143,0.0,0.06666666666666667,0.0,0.06557377049180328,0.0,0.0],[0.0,0.03571428571428571,0.8928571428571429,0.03333333333333333,0.0,0.0,0.0,0.0],[0.0,0.017857142857142856,0.0,0.8333333333333334,0.0,0.0,0.0,0.09090909090909091],[0.0,0.0,0.0,0.0,0.9142857142857143,0.03278688524590164,0.0,0.0],[0.030303030303030304,0.10714285714285714,0.0,0.03333333333333333,0.02857142857142857,0.8688524590163934,0.06666666666666667,0.09090909090909091],[0.15151515151515152,0.0,0.07142857142857142,0.0,0.0,0.0,0.8666666666666667,0.0],[0.09090909090909091,0.0,0.03571428571428571,0.03333333333333333,0.02857142857142857,0.03278688524590164,0.06666666666666667,0.7272727272727273]],"type":"heatmap","xaxis":"x","yaxis":"y","hovertemplate":"Predicted: %{x}<br>Actual: %{y}<br>color: %{z}<extra></extra>","text":[[0.7272727272727273,0.0,0.0,0.0,0.02857142857142857,0.0,0.0,0.09090909090909091],[0.0,0.8392857142857143,0.0,0.06666666666666667,0.0,0.06557377049180328,0.0,0.0],[0.0,0.03571428571428571,0.8928571428571429,0.03333333333333333,0.0,0.0,0.0,0.0],[0.0,0.017857142857142856,0.0,0.8333333333333334,0.0,0.0,0.0,0.09090909090909091],[0.0,0.0,0.0,0.0,0.9142857142857143,0.03278688524590164,0.0,0.0],[0.030303030303030304,0.10714285714285714,0.0,0.03333333333333333,0.02857142857142857,0.8688524590163934,0.06666666666666667,0.09090909090909091],[0.15151515151515152,0.0,0.07142857142857142,0.0,0.0,0.0,0.8666666666666667,0.0],[0.09090909090909091,0.0,0.03571428571428571,0.03333333333333333,0.02857142857142857,0.03278688524590164,0.06666666666666667,0.7272727272727273]],"texttemplate":"%{text:.2f}"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmapgl":[{"type":"heatmapgl","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"scaleanchor":"y","constrain":"domain","title":{"text":"Predicted"}},"yaxis":{"anchor":"x","domain":[0.0,1.0],"autorange":"reversed","constrain":"domain","title":{"text":"Actual"}},"coloraxis":{"colorscale":[[0.0,"rgb(247,251,255)"],[0.125,"rgb(222,235,247)"],[0.25,"rgb(198,219,239)"],[0.375,"rgb(158,202,225)"],[0.5,"rgb(107,174,214)"],[0.625,"rgb(66,146,198)"],[0.75,"rgb(33,113,181)"],[0.875,"rgb(8,81,156)"],[1.0,"rgb(8,48,107)"]]},"margin":{"t":60},"title":{"text":"Precision heatmap (column wise relative values)"},"height":900,"width":900},                        {"responsive": true}                    ).then(function(){
-
-var gd = document.getElementById('d1e9e48d-9fa6-4d21-84f2-2daec8f0248f');
-var x = new MutationObserver(function (mutations, observer) {{
-        var display = window.getComputedStyle(gd).display;
-        if (!display || display === 'none') {{
-            console.log([gd, 'removed!']);
-            Plotly.purge(gd);
-            observer.disconnect();
-        }}
-}});
-
-// Listen for the removal of the full notebook cells
-var notebookContainer = gd.closest('#notebook-container');
-if (notebookContainer) {{
-    x.observe(notebookContainer, {childList: true});
-}}
-
-// Listen for the clearing of the current output cell
-var outputEl = gd.closest('.output');
-if (outputEl) {{
-    x.observe(outputEl, {childList: true});
-}}
-
-                        })                };                });            </script>        </div>
-
+![image info](./images/Precision_heatmap.png)
 
 The lowest precision value is 0.73 for the classes *acceleration from standing* and *turn right* while the highest is 0.91 for *stationary*. Of all predictions as *acceleration from standing* fifteen percent of cases were actually left turns and nine percent actually right turns. Of all predictions as *continuous driving* eleven percent of predicted cases were actually *targeted braking* maneuvers.
 
@@ -1204,14 +797,3 @@ Parameters:
 - **title** : str - default = 'Recall heatmap (row wise relative values)', figure title.
     
 Returns: Plotly figure.
-
-
-
-```python
-
-```
-
-
-```python
-
-```
