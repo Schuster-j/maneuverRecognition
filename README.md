@@ -278,7 +278,7 @@ Since we have data of three different persons and to ensure that different route
 
 
 ```python
-from maneuver_recognition import preprocessing
+from maneuverrecognition import preprocessing
 
 x_vars = ['accX', 'accY', 'accZ', 'gyroX', 'gyroY', 'gyroZ', 'speed', 'roadType_autobahn',
           'roadType_city_road','roadType_country_road','roadType_federal_highway']
@@ -416,7 +416,7 @@ The *modelling* module can then be used to create a pytorch LSTM model. The base
 
 
 ```python
-from maneuver_recognition import modelling
+from maneuverrecognition import modelling
 
 number_of_features = X_train.shape[2]
 number_of_classes = len(np.unique(y_train))
@@ -483,7 +483,7 @@ By using the *plot_training_process* function of the evaluation module, the vali
 
 
 ```python
-from maneuver_recognition import evaluation
+from maneuverrecognition import evaluation
 evaluation.plot_training_process(loss_list, accuracy_list)
 ```
 
