@@ -2,14 +2,13 @@
 
 maneuverRecognition is a python package providing functions for the preprocessing of time series data for classification, the creation of predictive LSTM based  models and the evaluation of multi class predictions. Its functionalities are demonstrated in section 2 using a real world use case in the domain of vehicle telematics. The package documentation can be found in section 3.
 
-Package distribution:
-https://pypi.org/project/maneuverRecognition/
-
 Installation:
 ```
 pip install maneuverRecognition
 ```
 
+* Package distribution: https://pypi.org/project/maneuverRecognition/
+* Package paper: https://github.com/Schuster-j/maneuverRecognition/blob/main/papers/Schuster_2023_maneuverRecognition.pdf
 
 # Content
 
@@ -63,7 +62,7 @@ Although there has been a great deal of research on developing maneuver recognit
 
 The maneuverRecognition package was therefore developed to simplify the aforementioned processes and make the task of maneuver recognition more accessible. In the following, its functionality is demonstrated using real driving data.
 
-A more detailed research paper on the background of this package is also available here: ManeuverRecognition - a python package for timeseries classification in the domain of vehicle telematics
+A more detailed research paper on the background of this package is also available here: [ManeuverRecognition - a python package for timeseries classification in the domain of vehicle telematics](https://github.com/Schuster-j/maneuverRecognition/blob/main/papers/Schuster_2023_maneuverRecognition.pdf)
 
 
 *Abstract - In the domain of vehicle telematics the automated recognition of driving maneuvers is used to classify and evaluate driving behaviour. This not only serves to enhance the personalization of insurance policies, but also to increase road safety, reduce accidents and the associated costs as well as to reduce fuel consumption and support environmentally friendly driving. In this context maneuver recognition technically requires a continuous application of time series classification which poses special challenges to the preprocessing of telematic sensor data, the training of predictive models, and the prediction itself. Although much research has been done in the field of gathering relevant data or regarding the methods to build predictive models for the task of maneuver recognition, there is a need for python packages and functions that allow to quickly transform data into the required structure as well as to build and evaluate such models. The maneuverRecognition package was therefore developed to provide the necessary functions for preprocessing, modelling and evaluation and also includes a ready to use LSTM based network structure that can be modified. The implementation of the package is demonstrated using real driving data of three different persons recorded via smartphone sensors.*
@@ -74,7 +73,7 @@ A more detailed research paper on the background of this package is also availab
 
 In this section, the implementation of the package is demonstrated using real world driving data of a previous research project which has been carried out at the Harz University of Applied Sciences. The objective of the research project was to collect comprehensive driving data of different persons in real world traffic. Since the recording of telematics data via special hardware is difficult to replicate, an application to record smartphone sensors was developed for this purpose. Then trips of three persons using different vehicles were recorded using the smartphone application and a dashcam for the subsequent manual assignment of maneuver types to the captured sensor data. 
 
-A more detailed description of the research project can be found in this corresponding paper (currently only in german - english version coming soon).
+A more detailed description of the research project can be found in [this corresponding paper] (https://github.com/Schuster-j/maneuverRecognition/blob/main/papers/Schuster_2023_Manoevererkennung_durch_Smartphonesensoren.pdf) (currently only in german - english version coming soon).
 
 ## 2.2 Dataset <a name="heading--2-2"/>
 The dataset contains sensor data of a smartphones accelerometer, gyroscope and GPS which were recorded during a total of three trips driven by different persons using different vehicles on the same 60.7 kilometer route. The accelerometer was used to record the acceleration forces along three orthogonal axes in meters per square second without taking the gravitational force into account. The gyroscope was used to measure rotational speed around the same three axes in radians per second. GPS data includes latitude, longitude, altitude, accuracy as an estimated horizontal accuracy radius in meters, and speed in meters per second. The following picture shows the positioning of the smartphone during the recordings and the resulting alignment of the sensors axes.
