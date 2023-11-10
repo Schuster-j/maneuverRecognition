@@ -1,6 +1,6 @@
 # maneuverRecognition Package
 
-ManeuverRecognition is a python package providing functions for the preprocessing of time series data for classification, the creation of predictive LSTM based  models and the evaluation of multi class predictions. Its functionalities are demonstrated in section 2 using a real world use case in the domain of vehicle telematics. The package documentation can be found in section 3.
+maneuverRecognition is a python package providing functions for the preprocessing of time series data for classification, the creation of predictive LSTM based  models and the evaluation of multi class predictions. Its functionalities are demonstrated in section 2 using a real world use case in the domain of vehicle telematics. The package documentation can be found in section 3.
 
 
 # Content
