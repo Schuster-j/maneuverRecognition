@@ -611,6 +611,7 @@ Returns: Numpy arrays of X and y data for training and testing partitions.
 
 ### 3.1.4 LabelEncoding <a name="heading--3-1-4"/>
 *class* **preprocessing.LabelEncoding(y_train: Any, y_test: Any)**
+
 Class to encode labels from target variable data and transform given data with sklearn LabelEncoder. Stores LabelEncoder for usage of inverse_transform().
 
 Init-Parameters:
@@ -624,6 +625,7 @@ No parameters. Returns: Transformed numpy arrays of training and testing target 
 
 ### 3.1.5 transform_to_variables() <a name="heading--3-1-5"/>
 *function* **preprocessing.transform_to_variables(X_train: Any, y_train: Any, X_test: Any, y_test: Any)**
+
 Function to transform numpy arrays of training and testing data to torch Variables.
 
 Parameters:
@@ -645,6 +647,7 @@ The modelling module includes a LSTM model structure that can be trained and use
                  n_features_linear1: int = 64, n_features_linear2: int = 32,
                  linear_dropout: float = 0.3)**
                  
+                 
 Class with LSTM based model architecture for maneuver recognition.
 
 Init-Parameters:
@@ -659,6 +662,7 @@ Init-Parameters:
 
 *function* **ManeuverModel.predict(X)**
 
+
 Function to use model for prediction of given cases.
 
 Parameters:
@@ -668,6 +672,7 @@ Returns: List of predictions for given input data.
 
 ### 3.2.2 train() <a name="heading--3-2-2"/>
 *function* **modelling.train(dataloader, model, loss_fn, optimizer, device)**
+
 
 Function to apply training process on model with given data of dataloader object.
     In order to fit the model with direct data use fit_model
@@ -681,6 +686,7 @@ Parameters:
 
 ### 3.2.3 test() <a name="heading--3-2-3"/>
 *function* **modelling.test(dataloader, model, loss_fn, device)**
+
 
 Function to evaluate given model with data of dataloader. In order to use the model for predictions use
     the predict function of the model object instead.
@@ -720,6 +726,7 @@ The evaluation module provides functions to examine the training process by visu
 ### 3.3.1 relative_values() <a name="heading--3-3-1"/>
 *function* **evaluation.relative_values(array: Any)**
 
+
 Function to calculate values relative to sum of array.
 
 Parameters:
@@ -729,6 +736,7 @@ Returns: Numpy array with values divided by sum of input array.
 
 ### 3.3.2 plot_training_process() <a name="heading--3-3-2"/>
 *function* **plot_training_process(loss_list: List, accuracy_list: List, figsize: Tuple = (12, 6))**
+
 
 Function to plot validation accuracy and validation loss over epochs.
 
@@ -741,6 +749,7 @@ Function to plot validation accuracy and validation loss over epochs.
 *function* **evaluation.create_heatmap(data: Any, classes: Any, colorscale: Any, title: str, height: int, width: int,
                    x_label: str = 'Predicted',
                    y_label: str = 'Actual')**
+                   
 
 Function to create a heatmap plot of given data and class labels.
 
@@ -759,6 +768,7 @@ Returns: Plotly figure.
 *function* **evaluation.confusion_heatmap(y_test: Any, y_pred: Any, classes: Any, colorscale='Blues', height: int = 900, 
 width: int = 900,title: str = 'Confusion heatmap')**
 
+
 Function to create heatmap plot based on confusion matrix of predicted and true values for arbitrary number of classes. Uses create_heatmap() function for plot generation.
 
 Parameters:
@@ -775,6 +785,7 @@ Returns: Plotly figure.
 ### 3.3.5 precision_heatmap() <a name="heading--3-3-5"/>
 *function* **evaluation.precision_heatmap(y_test: Any, y_pred: Any, classes: Any, colorscale='Blues',
                       height: int = 900, width: int = 900, title: str = 'Precision heatmap (column wise relative values)')**
+                      
                       
 Function to create a heatmap plot based on confusion matrix of predicted and true values with relative values along axis of each predicted class (column wise). This represents a precision value for each class in the diagonal of the heatmap. Uses create_heatmap() function for plot generation.
 
@@ -793,6 +804,7 @@ Returns: Plotly figure.
 ### 3.3.6 recall_heatmap() <a name="heading--3-3-6"/>
 *function* **evaluation.recall_heatmap(y_test: Any, y_pred: Any, classes: Any, colorscale='Blues',
                    height: int = 900, width: int = 900, title: str = 'Recall heatmap (row wise relative values)')**
+                   
 
 Function to create a heatmap plot based on confusion matrix of predicted and true values with relative values along axis of each
     predicted class (row wise). This represents a recall value for each class in the diagonal of the heatmap. Uses create_heatmap() function for plot generation.
