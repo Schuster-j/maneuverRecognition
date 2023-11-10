@@ -367,7 +367,7 @@ fig.show()
 
 ### 2.3.3 Label encoding and variable transformation <a name="heading--2-3-3"/>
 
-Next a label encoder is going to be created with the *LabelEncoding* class.  With the encoding object the target variable data can be encoded by using its *transform* function. The ojbect also stores the class labels so that the numeric values of the target variable can be transformed back to the labels using the *inverse_transform* function later.
+Next a label encoder is going to be created with the *LabelEncoding* class.  With the encoding object the target variable data can be encoded by using its *transform* function. The object also stores the class labels so that the numeric values of the target variable can be transformed back to the labels using the *inverse_transform* function later.
 
 
 ```python
@@ -396,7 +396,7 @@ print(f"Using {device} device")
 
 
 ### 2.4.1 Defining model architecture and initializing the model <a name="heading--2-4-1"/>
-The *modelling* module can then be used to create and use a pytorch LSTM model. The base structure of the model is already defined and consists of a LSTM layer, two linear fully connected layers with a dropout of 0.3 and a final linear layer for multi class classification. Different configurations have been tested for this use case, but with the following parameters the architecture of the model can be configured individually:
+The *modelling* module can then be used to create a pytorch LSTM model. The base structure of the model is already defined and consists of a LSTM layer, two linear fully connected layers with a dropout of 0.3 and a final linear layer for multi class classification. Different configurations have been tested for this use case, but with the following parameters the architecture of the model can be configured individually:
 
 - n_features: The number of expected features in the input x.
 - n_classes: Number of classes for classification layer.
@@ -434,7 +434,7 @@ print(model)
 
 ### 2.4.2 Training the model <a name="heading--2-4-2"/>
 
-Now we can use the function *fit_model* to fit the model. The function uses PyTorch's DataLoader wrapper, so we can directly input our training and testing data and define a specific batch size. We also have to set the number of epochs and define an optimizer as well as the type of loss function to use for the training process. The fit function is not part of the model class in order to enable independent use of the function with other models and model structures.
+Now the *fit_model* function can be used. The function uses PyTorch's DataLoader wrapper, so we can directly input our training and testing data and define a specific batch size. We also have to set the number of epochs and define an optimizer as well as the type of loss function to use for the training process. The fit function is not part of the ManeuverModel class in order to enable independent use of the function with other models and model structures.
 
 
 ```python
@@ -543,7 +543,7 @@ The lowest precision value is 0.73 for the classes *acceleration from standing* 
 
 The plots considered in the evaluation show that the model achieves good to very good results in the predictions for most classes. Nevertheless, in addition to the poorer recall and precision values for the already mentioned classes, there are a few aspects to consider when interpreting the model performance and results of this demonstration. 
 
- First, it should be noted that the used training data has been manually labeled and therefore may be fundamentally influenced by inaccuracies both in the accuracy of the labeling and the interpretation of the category system and class definitions. It is important to consider that with the presented preprocessing method, the same window length is assigned to all maneuvers and the mode of the maneuver type value within the window is used as the respective target variable. If, as in the given example, there are maneuver types that are executed in very different duration, this can complicate the modeling. Some maneuvers like breaking can often happen in a much shorter time span than a turning maneuver which may includes waiting until oncoming traffic passes. For this reason, both the definition of the maneuvers and their labeling, as well as the selected length of the windows in the preprocessing should be tested. Also the number of time steps between the windows can have a significant impact on the model performance.
+ First, it should be noted that the used data has been manually labeled and therefore may be fundamentally influenced by inaccuracies both in the accuracy of the labeling and the interpretation of the category system and class definitions. It is important to consider that with the presented preprocessing method, the same window length is assigned to all maneuvers and the mode of the maneuver type value within the window is used as the respective target variable. If, as in the given example, there are maneuver types that are executed in very different duration, this can complicate the modeling. Some maneuvers like breaking can often happen in a much shorter time span than a turning maneuver which may includes waiting until oncoming traffic passes. For this reason, both the definition of the maneuvers and their labeling, as well as the selected length of the windows in the preprocessing should be tested. Also the number of time steps between the windows can have a significant impact on the model performance.
  
 The model architecture from the *modeling* module has proven to be feasible in this case and, as mentioned, can be configured via various parameters. Other network structures or model components such as optimization methods or loss functions could also be used with the preprocessed data and lead to different results.
 
@@ -567,7 +567,7 @@ Parameters:
 - **X** : DataFrame with data of predictors.
 - **y** : DataFrame column of target variable.
 - **time_steps** : int - Length of windows in number of rows.
-- **step_size** : int - Steps between windows. (int)
+- **step_size** : int - Steps between windows.
 
 Returns: Tuple of numpy array for x-variable data and numpy array for y-variable data
 
@@ -603,7 +603,7 @@ Parameters:
 - **y_train** : Target variable data of training partition.
 - **X_test** : X data of testing partition.
 - **y_test** : Target variable data of testing partition.
-- **maneuvers** : List[str] - List of maneuver names or single maneuver name.
+- **maneuvers** : List[str] or str - List of maneuver names or single maneuver name.
 - **proportion_to_remove** : float - default = 1.0, Proportion of data to remove for given maneuvers.
 
 Returns: Numpy arrays of X and y data for training and testing partitions.
@@ -644,6 +644,7 @@ The modelling module includes a LSTM model structure that can be trained and use
                  n_layers: int = 4, lstm_dropout: float = 0.7,
                  n_features_linear1: int = 64, n_features_linear2: int = 32,
                  linear_dropout: float = 0.3)**
+                 
 Class with LSTM based model architecture for maneuver recognition.
 
 Init-Parameters:
@@ -657,6 +658,7 @@ Init-Parameters:
 - **linear_dropout** : float - default = 0.3, value of applied dropout between first and second linear layer.
 
 *function* **ManeuverModel.predict(X)**
+
 Function to use model for prediction of given cases.
 
 Parameters:
@@ -666,6 +668,7 @@ Returns: List of predictions for given input data.
 
 ### 3.2.2 train() <a name="heading--3-2-2"/>
 *function* **modelling.train(dataloader, model, loss_fn, optimizer, device)**
+
 Function to apply training process on model with given data of dataloader object.
     In order to fit the model with direct data use fit_model
 
@@ -678,6 +681,7 @@ Parameters:
 
 ### 3.2.3 test() <a name="heading--3-2-3"/>
 *function* **modelling.test(dataloader, model, loss_fn, device)**
+
 Function to evaluate given model with data of dataloader. In order to use the model for predictions use
     the predict function of the model object instead.
 
@@ -692,6 +696,7 @@ Returns: Tuple with proportion of correctly predicted cases and average test los
 ### 3.2.4 fit_model() <a name="heading--3-2-4"/>
 *function* **modelling.fit_model(model, X_train, y_train, X_test, y_test, epochs, batch_size,
                          loss_function, optimizer, device)**
+
 Function to fit a model. Applies model training with given X and y training data and uses given X and y test data for training validation. Returns list of validation loss and validation accuracy per epoch.
 
 Parameters:
@@ -714,6 +719,7 @@ The evaluation module provides functions to examine the training process by visu
 
 ### 3.3.1 relative_values() <a name="heading--3-3-1"/>
 *function* **evaluation.relative_values(array: Any)**
+
 Function to calculate values relative to sum of array.
 
 Parameters:
@@ -723,6 +729,7 @@ Returns: Numpy array with values divided by sum of input array.
 
 ### 3.3.2 plot_training_process() <a name="heading--3-3-2"/>
 *function* **plot_training_process(loss_list: List, accuracy_list: List, figsize: Tuple = (12, 6))**
+
 Function to plot validation accuracy and validation loss over epochs.
 
 - **loss_list** : List of validation loss by epoch.
@@ -734,6 +741,7 @@ Function to plot validation accuracy and validation loss over epochs.
 *function* **evaluation.create_heatmap(data: Any, classes: Any, colorscale: Any, title: str, height: int, width: int,
                    x_label: str = 'Predicted',
                    y_label: str = 'Actual')**
+
 Function to create a heatmap plot of given data and class labels.
 
 Parameters:
@@ -750,6 +758,7 @@ Returns: Plotly figure.
 ### 3.3.4 confusion_heatmap() <a name="heading--3-3-4"/>
 *function* **evaluation.confusion_heatmap(y_test: Any, y_pred: Any, classes: Any, colorscale='Blues', height: int = 900, 
 width: int = 900,title: str = 'Confusion heatmap')**
+
 Function to create heatmap plot based on confusion matrix of predicted and true values for arbitrary number of classes. Uses create_heatmap() function for plot generation.
 
 Parameters:
@@ -784,6 +793,7 @@ Returns: Plotly figure.
 ### 3.3.6 recall_heatmap() <a name="heading--3-3-6"/>
 *function* **evaluation.recall_heatmap(y_test: Any, y_pred: Any, classes: Any, colorscale='Blues',
                    height: int = 900, width: int = 900, title: str = 'Recall heatmap (row wise relative values)')**
+
 Function to create a heatmap plot based on confusion matrix of predicted and true values with relative values along axis of each
     predicted class (row wise). This represents a recall value for each class in the diagonal of the heatmap. Uses create_heatmap() function for plot generation.
 
