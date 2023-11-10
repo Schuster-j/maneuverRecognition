@@ -8,7 +8,7 @@ pip install maneuverRecognition
 ```
 
 * Package distribution: https://pypi.org/project/maneuverRecognition/
-* Package paper: https://github.com/Schuster-j/maneuverRecognition/blob/main/papers/Schuster_2023_maneuverRecognition.pdf
+* [Package paper](https://github.com/Schuster-j/maneuverRecognition/blob/main/papers/Schuster_2023_maneuverRecognition.pdf)
 
 # Content
 
