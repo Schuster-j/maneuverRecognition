@@ -390,7 +390,7 @@ X_train, y_train, X_test, y_test = preprocessing.transform_to_variables(X_train,
 ```
 
 ## 2.4 Modelling <a name="heading--2-4"/>
-Before using the *modelling* module of the maneuver recognition package, the device to use for training and testing our model can be set.
+Before using the *modelling* module of the maneuver recognition package, the device to use for training and testing the model can be set.
 
 
 ```python
