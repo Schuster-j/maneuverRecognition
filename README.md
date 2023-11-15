@@ -60,7 +60,7 @@ pip install maneuverRecognition
 
 Although there has been a great deal of research on developing maneuver recognition systems and models, there are few publicly available resources that allow easy and quick transformation of data and creation of models for this application. In contrast to the classification of data that is available as individual, separate cases, maneuver recognition has very specific requirements for the preprocessing, model development and model evaluation. These arise from the necessity of these models to be applicable to a continuous data stream, the seamless transition of classes and the numerous influence factors when performing maneuvers in real road traffic.
 
-The maneuverRecognition package was therefore developed to simplify the aforementioned processes and make the task of maneuver recognition more accessible. In the following, its functionality is demonstrated using real driving data.
+The [maneuverRecognition](https://pypi.org/project/maneuverRecognition/) package was therefore developed to simplify the aforementioned processes and make the task of maneuver recognition more accessible. In the following, its functionality is demonstrated using real driving data.
 
 A more detailed research paper on the background of this package is also available here: [ManeuverRecognition - a python package for timeseries classification in the domain of vehicle telematics](https://github.com/Schuster-j/maneuverRecognition/blob/main/papers/Schuster_2023_maneuverRecognition.pdf)
 
