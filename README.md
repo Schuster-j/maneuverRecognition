@@ -8,7 +8,7 @@ pip install maneuverRecognition
 ```
 
 * Package distribution: https://pypi.org/project/maneuverRecognition/
-* [Package paper](https://github.com/Schuster-j/maneuverRecognition/blob/main/papers/Schuster_2023_maneuverRecognition.pdf)
+* Package paper upcoming
 
 # Content
 
@@ -62,8 +62,7 @@ Although there has been a great deal of research on developing maneuver recognit
 
 The [maneuverRecognition](https://pypi.org/project/maneuverRecognition/) package was therefore developed to simplify the aforementioned processes and make the task of maneuver recognition more accessible. In the following, its functionality is demonstrated using real driving data.
 
-A more detailed research paper on the background of this package is also available here: [maneuverRecognition - a python package for timeseries classification in the domain of vehicle telematics](https://github.com/Schuster-j/maneuverRecognition/blob/main/papers/Schuster_2023_maneuverRecognition.pdf)
-
+A more detailed research paper on the background of this package will also be available soon: maneuverRecognition - a python package for timeseries classification in the domain of vehicle telematics
 
 *Abstract - In the domain of vehicle telematics the automated recognition of driving maneuvers is used to classify and evaluate driving behaviour. This not only serves to enhance the personalization of insurance policies, but also to increase road safety, reduce accidents and the associated costs as well as to reduce fuel consumption and support environmentally friendly driving. In this context maneuver recognition technically requires a continuous application of time series classification which poses special challenges to the preprocessing of telematic sensor data, the training of predictive models, and the prediction itself. Although much research has been done in the field of gathering relevant data or regarding the methods to build predictive models for the task of maneuver recognition, there is a need for python packages and functions that allow to quickly transform data into the required structure as well as to build and evaluate such models. The maneuverRecognition package was therefore developed to provide the necessary functions for preprocessing, modelling and evaluation and also includes a ready to use LSTM based network structure that can be modified. The implementation of the package is demonstrated using real driving data of three different persons recorded via smartphone sensors.*
 
